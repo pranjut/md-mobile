@@ -16,6 +16,7 @@
         <ion-list>
             <ion-item *ngFor="let match of matches">
               {{match}}
+              <button ion-button full (click)="speakUp(match)">Speak</button>
             </ion-item>
         </ion-list>
     </ion-card-content>
